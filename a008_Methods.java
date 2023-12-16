@@ -1,6 +1,6 @@
 
 
-class Computer
+class a008_Computer
 {
     public void playMusic()
     {
@@ -18,11 +18,11 @@ class Computer
 }
 
 
-public class Methods {
+public class a008_Methods {
     public static void main(String[] args) 
     {
         
-        Computer obj = new Computer();
+        a008_Computer obj = new a008_Computer();
         obj.playMusic();
         String str = obj.getMeAPen(22);
         System.out.println(str);

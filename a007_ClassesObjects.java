@@ -1,5 +1,5 @@
 
-class Calculator {
+class a007_Calculator {
 
     int a;
 
@@ -11,12 +11,12 @@ class Calculator {
 
 }
 
-public class ClassesObjects {
+public class a007_ClassesObjects {
     public static void main(String[] args) {
 
         int num1 = 4, num2 = 5;
 
-        Calculator calc = new Calculator();
+        a007_Calculator calc = new a007_Calculator();
         int result = calc.add(num1,num2);
 
         // int result = num1 + num2;

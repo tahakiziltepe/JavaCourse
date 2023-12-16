@@ -1,6 +1,6 @@
 
 
-public class IfElse {
+public class a002_IfElse {
     public static void main(String[] args) {
 
         if(false) // Since the statement is false, it won't print something.

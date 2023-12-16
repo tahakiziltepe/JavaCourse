@@ -1,5 +1,5 @@
 
-class Calculator
+class a009_Calculator
 {
     public int add(int n1, int n2, int n3)
     {
@@ -15,10 +15,10 @@ class Calculator
     }
 }
 
-public class MethodOverloading {
+public class a009_MethodOverloading {
     public static void main(String[] args) {
         
-        Calculator obj = new Calculator();
+        a009_Calculator obj = new a009_Calculator();
         int r1 = obj.add(3, 4, 5);
         System.out.println(r1);
     }

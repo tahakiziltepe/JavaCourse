@@ -1,4 +1,4 @@
-public class Switch {
+public class a003_Switch {
     public static void main(String[] args) {
         
         int n = 3;

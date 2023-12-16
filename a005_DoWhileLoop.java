@@ -1,6 +1,6 @@
 
 
-public class DoWhileLoop {
+public class a005_DoWhileLoop {
     public static void main(String[] args) {
         
         int i = 5;

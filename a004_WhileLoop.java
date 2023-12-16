@@ -1,5 +1,5 @@
 
-public class WhileLoop {
+public class a004_WhileLoop {
     public static void main(String[] args) {
 
         int i = 1;
