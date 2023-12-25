@@ -21,7 +21,7 @@ class a017_Mobile {
         System.out.println(obj.brand + " : " + obj.price + " : " + name);
     }
 
-}
+}   
 
 
 public class a017_StaticMethods {

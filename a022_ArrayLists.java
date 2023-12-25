@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 public class a022_ArrayLists {
@@ -11,6 +10,7 @@ public class a022_ArrayLists {
         nums.add(7);
         nums.add(8);
         nums.add(9);
+        
 
         boolean a = nums.contains(6);
         System.out.println(a);
@@ -39,6 +39,9 @@ public class a022_ArrayLists {
         for(int n : lst){
             System.out.println(lst.indexOf(n));
         }
+        System.out.println("----");
+        lst.forEach(n -> System.out.println(n));
+
 
     }
 }

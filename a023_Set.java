@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class a023_Set {
     public static void main(String[] args) {
         
-        // Set collection which is used for unique values.
+        // Set collection which is used for UNIQUE values.
         Set<Integer> nums = new HashSet<Integer>();
         nums.add(62);
         nums.add(74);

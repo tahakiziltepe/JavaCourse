@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class a024_Map {
     public static void main(String[] args) {
@@ -23,6 +24,7 @@ public class a024_Map {
         for(String k : student.keySet()){
             System.out.println(k + " : " + student.get(k));
         }
-
+        
+        student.values()
     }
 }
