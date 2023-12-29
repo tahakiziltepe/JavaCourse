@@ -13,6 +13,8 @@ public class a023_Set {
         nums.add(87);
         nums.add(91);
 
+        nums.addAll(nums)
+
         Iterator<Integer> values = nums.iterator();
         
         while(values.hasNext()){

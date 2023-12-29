@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Stack;
 import java.util.TreeMap;
 
 public class a024_Map {
@@ -25,6 +26,6 @@ public class a024_Map {
             System.out.println(k + " : " + student.get(k));
         }
         
-        student.values()
+        
     }
 }

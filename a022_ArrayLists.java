@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Stack;
 
 public class a022_ArrayLists {
     public static void main(String[] args) {
@@ -41,6 +42,8 @@ public class a022_ArrayLists {
         }
         System.out.println("----");
         lst.forEach(n -> System.out.println(n));
+
+
 
 
     }

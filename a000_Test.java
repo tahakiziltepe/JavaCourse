@@ -1,57 +1,36 @@
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Stack;
 
-class ListNode {
-      int val;
-      ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
-  
 public class a000_Test {
     public static void main(String[] args) {
-        List<Integer> lst = Arrays.asList(1,2,3,4,5);
+        String str = "4?5?4?aamm9";
         
-        Stack<Integer> stack = new Stack<>();
-
-        stack.push(1);
-
-        System.out.println(stack.isEmpty());
-
-        String num1 = "1+1i";
-        char[] arr1 = num1.toCharArray();
-
-        char[] one = {'b','a','n'};
-        char[] two = {'l','o'};
-        Map<Character,Integer> count = new HashMap<>();
-        for(int i = 0 ; i < one.length ; i++){
-                count.put(one[i],0);
+        char[] cArr = new char[str.length()];
+        cArr = str.toCharArray();
+        List<Character> lst = new ArrayList<>();
+        for(int i = 0 ; i < cArr.length ; i++){
+          if(Character.isLetter(cArr[i])) {}
+          else {lst.add(cArr[i]);}
+          //if(Character.isDigit[cArr[i]]) { if((int)cArr[i] + (int)cArr[i+])  }
         }
-        for(int i = 0 ; i < two.length ; i++){
-                count.put(two[i],0);
+
+
+        for(int i = 0 ; i < lst.size() - 3 ; i++){
+          if(Character.isDigit(lst.get(i))) { 
+            System.out.println(lst.get(i));
+            System.out.println(lst.get(i+4));
+            System.out.println(lst.get(i+1));
+            System.out.println(lst.get(i+2));
+            System.out.println(lst.get(i+3));
+            if(Character.getNumericValue(lst.get(i)) + Character.getNumericValue(lst.get(i+4)) == 10 && lst.get(i+1) == '?' && lst.get(i+2) == '?' && lst.get(i+3) == '?' ) {System.out.println("true");}  
+          }
         }
-        for(char n : text.toCharArray()){
-            if(count.containsKey(n) && one.contains(n)){
-                count.put(n,count.get(n)+1);
-            }
-            else if (count.containsKey(n) && two.contains(n)){
-                count.put(n,count.get(n)+1);
-            }
-        }
-        int x = Integer.MAX_VALUE;
-        for(int n : count.values()){
-            if(n < x) { x = n; }
-        }
-        System.out.println(x);
+
+      
+        // code goes here  
+        System.out.println("false");
         
 
-    return x;
 
-
-       
     }
 }

@@ -1,0 +1,48 @@
+class Solution {
+    public long maximumSubarraySum(int[] nums, int k) {
+        long sum = 0;
+        for(int i = 0 ; i < nums.length - (k-1) ; i++){
+            int[] topla = new int[k];
+            int l = k;
+            while(l > 0){
+                topla[l-1] = nums[l-1+i];
+                l--;
+            }
+            Arrays.sort(topla);
+            boolean s = false;
+            for(int c = 0 ; c < k-1 ; c++){
+                if(topla[c] == topla[c+1]) {s = true;break;}
+            }
+            if(!s){
+                int kontrol = 0;
+                for(int n : topla) { kontrol += n; }
+                if(sum < kontrol && topla.length == k) { sum = kontrol;}            
+            }
+    }
+    return sum;
+    }   
+    }
+
+    class Solution {
+        public long maximumSubarraySum(int[] nums, int k) {
+            long sum = 0;
+            for(int i = 0 ; i < nums.length - (k-1) ; i++){
+                
+                List<Integer> topla = new ArrayList<>();
+                int kontrol = 0;
+                int l = k;
+                while(l > 0){
+                    if(topla.contains(nums[l-1+i])) {l-=k;}
+                    else{
+                        topla.add(0);
+                        kontrol += nums[l-1+i];
+                        l--;
+                    }
+                    
+                }
+                if(sum < kontrol && topla.size() == k) { sum = kontrol;}            
+            }
+            return sum;
+        }   
+    }
+    
